@@ -1,0 +1,54 @@
+@import '../../../components/publicStyle/variable'
+
+$body-width: 600px
+$body-height: 450px
+$error-color: #f04134
+
+.login
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
+  background-image: url('./login-bg.jpg')
+  background-size: cover
+.loginBody
+  position: absolute
+  top: 50%
+  left: 50%
+  margin: $body-height / -2 0 0 $body-width / -2
+  width: $body-width
+  height: $body-height
+.title
+  margin-bottom: 30px
+  font: 42px 'kuhei'
+  color: #fff
+  text-align: center
+  cursor: default
+.inputB
+  font-weight: bold
+.form
+  padding: 60px 45px 30px
+  margin: 0 auto
+  width: 400px
+  border: 1px solid #d9d9d9
+  background-color: rgba(255, 255, 255, .8)
+  border-radius: 10px
+.group
+  margin-bottom: 25px
+  height: 45px
+  \:global(.ant-input-group-addon)
+    font-size: 16px
+    color: $base-color
+\:global(.has-error) :global(.ant-input-group-addon)
+  color: $error-color
+.bf
+  margin: 0 3px
+.input
+  font-size: 14px
+.btn
+  width: 100%
+  margin-bottom: 20px
+.fl
+  float: left
+.fr
+  float: right

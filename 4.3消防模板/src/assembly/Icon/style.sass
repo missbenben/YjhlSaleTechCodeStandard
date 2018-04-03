@@ -1,0 +1,19 @@
+/**
+ * 网站图标
+ * 生成网站：https://icomoon.io/app/#/select
+ */
+
+@import './iconMaps'
+
+@font-face
+  font-family: 'icon'
+  src: url('./icon.ttf') format('truetype'), url('./icon.woff') format('woff'),url('./icon.svg') format('svg')
+
+@each $key, $value in $icons
+  .#{ $key }
+    &:before
+      font-family: 'icon'
+      font-style: normal
+      font-weight: normal
+      text-align: center
+      content: $value

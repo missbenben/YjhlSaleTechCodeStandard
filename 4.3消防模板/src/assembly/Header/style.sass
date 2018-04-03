@@ -1,0 +1,79 @@
+@import '../../components/publicStyle/variable'
+
+$text-color: rgba(255, 255, 255, .8)
+$text-color-hover: rgba(255, 255, 255, 1)
+$logo-width: 180px
+
+/* header style */
+.logo, .nav, .humanInformation
+  position: absolute
+.logo
+  left: 0
+  top: 0
+  padding-top: 5px
+  width: $logo-width
+  font: 26px 'kuhei'
+  line-height: 20px
+  font-weight: normal
+  text-align: center
+  color: $text-color
+  cursor: default
+.nav, .nav ul, .nav li, .nav a
+  height: 50px
+.nav
+  top: 0
+  left: $logo-width
+  li
+    float: left
+  a
+    display: block
+    padding: 0 8px
+    font-size: 15px
+    line-height: 50px
+    color: $text-color
+    -webkit-transition: color .5s, background-color .5s
+    transition: color .5s, background-color .5s
+    &:hover, &.navActive
+      color: $text-color-hover
+      text-decoration: none
+    &.navActive
+      background-color: $base-color * 1.17
+  i
+    font-size: 16px
+  span
+    margin-left: 4px
+    vertical-align: 2px
+
+/* 登录人信息 */
+.humanInformation
+  right: 15px
+  top: 14px
+  line-height: 16px
+.human, .username
+  cursor: default
+.human
+  top: -5px
+  margin: 0 0 0 5px
+  vertical-align: -13px
+  background-color: $base-color * 1.25 !important
+.username
+  margin: 0 0 0 5px
+  font-size: 16px
+  vertical-align: 2px
+.tools
+  margin: 0 5px
+  padding: 3px
+  border: none
+  font-size: 16px
+  background-color: transparent
+  color: #fff
+  cursor: pointer
+.username, .tools
+  color: $text-color
+.tools
+  font-size: 18px
+  vertical-align: -1px
+  -webkit-transition: color .5s
+  transition: color .5s
+  &:hover
+    color: $text-color-hover
